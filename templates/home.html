@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+{% load static %}
+  <head>
+    
+  <link rel="stylesheet" type="text/css" href="{% static 'css/dashboard.css' %}">
+  
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+
+    <!-- Bootstrap CSS -->
+    
+
+    <title>Home Page</title>
+  </head>
+  <body>
+    
+    <h1 id="karri">Home Page</h1>
+    <div class="title">
+      
+      <Button><a href="{% url 'logout' %}" >Logout</a></Button>
+      <Button><a href="{% url 'home' %}">RELOAD</a></Button>
+    </div>
+
+    <div class="accountdetails">
+      <h2 style="align-content: center;">Hey {{username}} !</h2>
+    <h3 style="align-content: center;">Your Profile</h3>
+    <h4>Bank Balance: {{money}}</h4>
+    <h4>Stocks bought: </h4>
+    <ul>
+      {% for stock in stocks %}
+      <li>{{stock.name}} {{stock.quantity}}</li>
+      {% endfor %}
+    </ul>
+    </div>
+
+
+    <div id="like_button_container"></div>
+
+    
+
+  
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
+    <script type="text/javascript" src="./Dashboard.js" ></script> -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://cdn.plot.ly/plotly-2.20.0.min.js"></script>
+
+
+    <script src="{% static 'react/react.development.js' %}"></script>
+    <script src="{% static 'react/react-dom.development.js' %}"></script>
+    <!-- JSX support-->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script src="{% static 'react/babel.min.js' %}"></script>
+    <script src="{% static 'js/dashboard.js' %}" type="text/babel"></script>
+    <script src="{% static 'js/Finance2.js' %}" type="text/babel"></script>
+
+    
+    
+  
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
+    <script type="text/javascript" src="./Dashboard.js" ></script> -->
+  </body>
+</html>

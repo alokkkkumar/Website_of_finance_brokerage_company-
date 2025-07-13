@@ -1,0 +1,73 @@
+
+
+body{
+    background: rgb(54,217,182);
+    background: linear-gradient(90deg, rgba(54,217,182,1) 0%, rgba(32,152,126,1) 43%, rgba(0,212,255,1) 100%);
+  }
+
+  .accountdetails{
+    max-width: 40%;
+    background-color: rgb(233, 233, 154);
+    padding:10px;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    justify-self: center;
+    margin-top:10px;
+    
+
+    
+  }
+  
+
+  
+
+  h1, h2, h3, h4, h5, p, span, strike{
+    font-family: 'Montserrat', sans-serif;
+  
+  }
+  #karri{
+    text-align: center;
+    color:rgb(200, 206, 216)
+  }
+
+  #loading{
+    text-align: center;
+
+  }
+#mftitles{
+    display: flex;
+}
+#mfdata{
+    display: flex;
+}
+
+#cryptotitles{
+    display: flex;
+}
+#cryptodata{
+    display: flex;
+}
+
+
+
+#stockstitles{
+    display: flex;
+}
+#stocksdata{
+    display: flex;
+}
+
+#userdashboarddata{
+  display: flex;
+}
+#userdashboarditems{
+  margin-left: 25px;
+}
+#userdashboarditems2{
+  margin-left: 40px;
+}
+
